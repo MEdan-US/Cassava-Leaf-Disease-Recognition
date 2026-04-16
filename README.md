@@ -15,6 +15,8 @@ This project provides an intelligent system to identify cassava leaf diseases fr
 - 🔄 **Real-time Processing**: Fast inference on CPU and GPU
 - 📈 **Disease Classification**: Identify multiple cassava leaf disease types
 
+## Dataset
+https://storage.googleapis.com/emcassavadata/
 ## Supported Disease Classes
 
 The model can classify the following cassava leaf conditions:
@@ -27,12 +29,9 @@ The model can classify the following cassava leaf conditions:
 ## Requirements
 
 - Python 3.7 or higher
-- TensorFlow/Keras
+- Torch
 - Streamlit
-- OpenCV (cv2)
-- NumPy
-- Pandas
-- Pillow (PIL)
+- Torchvision
 
 ## Installation
 
@@ -44,8 +43,8 @@ cd Cassava-Leaf-Disease-Recognition
 
 2. Create a virtual environment (recommended):
 ```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+conda create --name leaf_env -y
+conda activate leaf_env
 ```
 
 3. Install required packages:
@@ -58,7 +57,7 @@ pip install -r requirements.txt
 Run the Streamlit application:
 
 ```bash
-streamlit run app.py
+python -m streamlit run app.py
 ```
 
 The application will open in your default web browser at `http://localhost:8501`
