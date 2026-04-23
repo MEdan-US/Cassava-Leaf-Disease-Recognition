@@ -78,20 +78,14 @@ Cassava-Leaf-Disease-Recognition/
 ├── README.md
 ├── requirements.txt
 ├── app.py                          # Main Streamlit application
-├── models/                         # Pre-trained model files
-│   └── cassava_model.h5           # Trained deep learning model
-├── utils/                         # Utility functions
-│   ├── preprocessing.py
-│   ├── prediction.py
-│   └── visualization.py
-└── data/                          # Sample images and datasets
-    ├── test_images/
-    └── sample_leaves/
+├── leaf_model.pt                   # Trained deep learning model          
+├── demo_cbsdd                      # Example Image
+
 ```
 
 ## Model Architecture
 
-- **Base Model**: Transfer learning with pre-trained architectures (e.g., EfficientNet, ResNet)
+- **Base Model**: Transfer learning with architecture LeNet
 - **Input Size**: 224x224 RGB images
 - **Output**: Multi-class classification with softmax activation
 - **Accuracy**: Trained on thousands of labeled cassava leaf images
@@ -105,13 +99,13 @@ This project uses cassava leaf disease datasets that include:
 
 ## Performance
 
-- **Validation Accuracy**: ~95%
+- **Validation Accuracy**: ~80%
 - **Inference Time**: <1 second per image
-- **Model Size**: ~50-100MB
+- **Model Size**: ~10MB
 
 ## Technologies Used
 
-- **Deep Learning**: TensorFlow / Keras
+- **Deep Learning**: PyTorch
 - **Web Framework**: Streamlit
 - **Image Processing**: OpenCV, PIL
 - **Data Processing**: NumPy, Pandas
@@ -138,22 +132,6 @@ Contributions are welcome! To contribute:
 - [ ] Additional disease classes
 - [ ] Crop health metrics and recommendations
 
-## Troubleshooting
-
-### Common Issues:
-
-**ImportError: No module named 'tensorflow'**
-- Solution: Run `pip install tensorflow`
-
-**Streamlit not found**
-- Solution: Run `pip install streamlit`
-
-**Model file not found**
-- Solution: Ensure the model file is in the `models/` directory
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Disclaimer
 
