@@ -150,6 +150,10 @@ For questions, issues, or suggestions:
 - Deep learning research community
 - Streamlit for the excellent web framework
 
+## Demo
+<img width="1078" height="771" alt="Screenshot 2026-04-29 203514" src="https://github.com/user-attachments/assets/6779543d-6f86-46c2-96aa-27336abc038f" />
+
+
 ---
 
 **Last Updated**: 2026-04-16
